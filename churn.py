@@ -6,7 +6,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 from sklearn.metrics import accuracy_score
 
-df = pd.read_csv(r'C:\Users\Baijnath\Downloads\archive_Churn\WA_Fn-UseC_-Telco-Customer-Churn.csv')
+df = pd.read_csv(r'C:\Users\DHRUV\beju_intern\churn_prediction\WA_Fn-UseC_-Telco-Customer-Churn.csv')
 df.drop(['customerID'], axis=1, inplace=True)
 df['TotalCharges'] = pd.to_numeric(df['TotalCharges'], errors='coerce')
 df.dropna(inplace=True)
